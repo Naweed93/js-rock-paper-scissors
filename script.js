@@ -37,20 +37,20 @@ function play(playerChoise, computerChoise){
             return ["wrong input",0]
     }
 }
-function game(round){
-    let playerWins = 0;
-    let computerWins = 0;
-    let result;
-    let playerChoise
-    for (let i = 0; i < 5 ; i++){
-        playerChoise = prompt("what do you pick for this hand?");
-        result = play(playerChoise, computerPlay());
-        console.log(result[0]);
-        if (result[1] === 1)
-            playerWins += 1;
-        else if(result[1] === -1)
-            computerWins += 1;
-    }
-    console.log(`final result: Player ${playerWins} - ${computerWins} Computer`)
-}
-game()
+// function game(round){
+//     let playerWins = 0;
+//     let computerWins = 0;
+//     let result;
+//     let playerChoise
+//     for (let i = 0; i < 5 ; i++){
+//         playerChoise = prompt("what do you pick for this hand?");
+//         result = play(playerChoise, computerPlay());
+//         console.log(result[0]);
+//         if (result[1] === 1)
+//             playerWins += 1;
+//         else if(result[1] === -1)
+//             computerWins += 1;
+//     }
+//     console.log(`final result: Player ${playerWins} - ${computerWins} Computer`)
+// }
+// game()
