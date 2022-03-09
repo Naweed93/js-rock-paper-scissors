@@ -54,3 +54,12 @@ function play(playerChoise, computerChoise){
 //     console.log(`final result: Player ${playerWins} - ${computerWins} Computer`)
 // }
 // game()
+
+const buttons = document.querySelectorAll('button');
+
+buttons.forEach(button => {
+    button.addEventListener('click',(e) =>{
+        playerChoise = e.target.innerText;
+        console.log(playerChoise);
+    });
+});
